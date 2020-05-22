@@ -2,12 +2,12 @@
 
 ## Installation
 
-Add this Swift package in Xcode using its Github repository url. (File > Swift Packages > Add Package Dependency...)
+Add this Swift package in Xcode using its GitHub repository url. (File > Swift Packages > Add Package Dependency...)
 
 ## Usage
 
 ```swift 
-import KeyboardOffset
+import KeyboardOffset // 1. Import library
 
 struct ContentView: View {
   
@@ -18,7 +18,6 @@ struct ContentView: View {
   
   var body: some View {
     NavigationView {
-      
       Form {
         HStack {
           Spacer()
@@ -43,7 +42,7 @@ struct ContentView: View {
         
       }
       .navigationBarTitle(Text("Checkout"))
-      .keyboardOffset()
+      .keyboardOffset() // 2. Add view modifier
     }
   }
 }
